@@ -11,8 +11,9 @@ const io = socketIo(server);
 app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB
-mongoose.connect('mongodb://localhost/agile-wiki', {
+// Connect to MongoDB using environment variable for URI
+const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost/agile-wiki';
+mongoose.connect(mongoUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
