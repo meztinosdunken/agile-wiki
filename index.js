@@ -14,7 +14,11 @@ app.use(express.json());
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost/agile-wiki', {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+}).then(() => {
+  console.log('Connected to MongoDB');
+}).catch(err => {
+  console.error('MongoDB connection error:', err);
 });
 
 // Basic route
