@@ -14,3 +14,6 @@ Thank you for considering contributing to Agile Wiki! We appreciate your time an
 Please adhere to the [Code of Conduct](CODE_OF_CONDUCT.md) while contributing.
 
 We welcome all contributions, whether it's bug fixes, features, or **documentation improvements**! **Your contributions to documentation are vital for improving the usability and accessibility of our project. We thank you for helping us make Agile Wiki better for everyone!**
+
+### Additional Note
+Documentation contributions are especially appreciated, as they help improve the project for a wider audience.
